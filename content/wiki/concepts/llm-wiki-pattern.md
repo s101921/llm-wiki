@@ -45,7 +45,8 @@ LLM Wiki 的做法不同：
 
 ## 與其他模式的差別
 
-- vs [[RAG]]：RAG 每次重新檢索；Wiki Pattern 知識預先編譯，查詢更快更深
+- vs [[wiki/concepts/rag|RAG]]：RAG 每次重新檢索；Wiki Pattern 知識預先編譯，查詢更快更深
+- vs [[wiki/tools/mempalace|MemPalace]]：同樣解決 AI 記憶問題，但策略相反——MemPalace 儲存完整對話再語意搜尋（擅長事實回憶）；Wiki Pattern 預先合成知識頁面（擅長概念理解）。兩者可互補，見 [[wiki/syntheses/ai-memory-approaches]]
 - vs Notion/概念圖：手動維護，隨規模擴大人工成本爆炸
 - vs NotebookLM：封閉系統，無法自訂結構，知識不累積
 

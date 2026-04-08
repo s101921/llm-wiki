@@ -12,6 +12,22 @@ type: log
 
 ---
 
+## [2026-04-08] ingest | MemPalace — Milla Jovovich & Ben Sigman
+
+- 來源：[[Clippings/milla-jovovichmempalace...]]（GitHub README，v3.0.0）
+- 建立：[[wiki/summaries/mempalace]]
+- 建立：[[wiki/tools/mempalace]]
+- 建立：[[wiki/concepts/rag]]（補填缺失頁）
+- 建立：[[wiki/syntheses/ai-memory-approaches]]（LLM Wiki Pattern vs MemPalace vs RAG）
+- 更新：[[wiki/concepts/llm-wiki-pattern]]（補充 MemPalace 對照）
+- 更新：index.md（+4 頁面，+1 素材）
+
+## [2026-04-08] lint | 發現 3 個問題（0紅、1黃、2綠）
+
+- 🟡 未 ingest：Clippings/milla-jovovichmempalace（MemPalace 記憶系統）
+- 🟢 缺失頁面：[[RAG]]（被 llm-wiki-pattern 引用但未建立）
+- 🟢 建議深挖：MemPalace vs LLM Wiki Pattern 比較（syntheses/）
+
 ## [2026-04-08] ingest | LLM Wiki — Andrej Karpathy
 
 - 來源：[[Clippings/llm-wiki]]（GitHub Gist）
