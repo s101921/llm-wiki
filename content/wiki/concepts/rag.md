@@ -37,9 +37,21 @@ LLM 的訓練資料有截止日期，且無法記住對話外的私有資料。R
 
 > 這正是 [[wiki/concepts/llm-wiki-pattern]] 提出的核心動機——用預先合成的 wiki 取代每次查詢的 RAG。
 
+## 在 AI Agent 記憶系統中的應用
+
+AI Agent 的長期記憶本質上就是 RAG：
+
+1. 對話過程中的重要事件被寫入 `.md` 檔
+2. 使用者問問題時，Agent 呼叫 memory.search 工具
+3. 搜尋關鍵字與 memory chunks 做**字面比對（s1）+ 語意比對（s2）的 weighted sum**
+4. 取前 k 個 chunk 塞進 context，LLM 就能「想起」過去的事
+
+限制：今天、昨天的日誌在 System Prompt 中（準確），更早的靠 RAG（不一定可靠）。見 [[wiki/concepts/ai-agent]]。
+
 ## 與其他概念的關係
 
 - [[wiki/concepts/llm-wiki-pattern]] — Wiki Pattern 是 RAG 的替代方案（預編譯 vs 即時檢索）
+- [[wiki/concepts/ai-agent]] — AI Agent 記憶系統的底層機制就是 RAG
 - [[wiki/tools/mempalace]] — MemPalace 是精緻化的 RAG 實作（加上 Palace 結構提升檢索精度）
 
 ## 在教學上的應用
