@@ -136,8 +136,10 @@ Context window 有上限，OpenClaw 的壓縮策略（由輕到重）：
 
 - [[wiki/concepts/rag]] — Agent 記憶系統的底層檢索機制
 - [[wiki/tools/mempalace]] — 更成熟的 Agent 記憶架構，概念一脈相承
+- [[wiki/tools/hermes-agent]] — 另一種 Agent 框架：四層記憶 + 自動 Skills 沉澱，強調持久性與自我改進
 - [[wiki/syntheses/ai-memory-approaches]] — 不同記憶策略的比較
 - [[wiki/ai-workflow/context-engineering-coding-agents]] — Coding Agent 的進階 context 管理：Smart Zone、RPI、刻意壓縮。OpenClaw 的 Compaction 策略與 Dex Horthy 的 Intentional Compaction 是同一概念的兩個面向
+- [[wiki/ai-workflow/harnessing-engineering]] — AI Agent 的外殼工程：Agent = Model + Harnessing，六層穩定執行架構
 
 ## 相關素材
 

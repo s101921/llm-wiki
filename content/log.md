@@ -12,6 +12,25 @@ type: log
 
 ---
 
+## [2026-04-09] ingest | Harnessing Engineering — 歡歡老師，AI 秘密花園
+
+- 來源：[[raw/AI 落地關鍵：什麼是 Harnessing Engineering？.md]]（影片逐字稿）
+- 建立：[[wiki/summaries/harnessing-engineering]]
+- 建立：[[wiki/ai-workflow/harnessing-engineering]]（三代演進、六層架構、Agent = Model + Harnessing）
+- 更新：[[wiki/ai-workflow/context-engineering-coding-agents]]（補充 Harnessing 為更大框架的連結）
+- 更新：[[wiki/concepts/ai-agent]]（補充 Harnessing Engineering 交叉連結）
+- 更新：index.md（+2 頁面，+1 素材）
+
+## [2026-04-09] ingest | Hermes Agent — Nous Research（替代方案有限公司）
+
+- 來源：[[Clippings/Hermes Agent 是什麼？Nous Research 如何用「會記憶的 AI」改變遊戲規則？.md]]（文章，2026-04-05）
+- 建立：[[wiki/summaries/hermes-agent-nous-research]]
+- 建立：[[wiki/tools/hermes-agent]]（四層記憶、學習循環、Skills 系統）
+- 更新：[[wiki/syntheses/ai-memory-approaches]]（改為五方案比較，加入程序記憶類型）
+- 更新：[[wiki/concepts/ai-agent]]（補充 Hermes Agent 工具連結）
+- 更新：[[wiki/tools/mempalace]]（補充 vs Hermes Agent 比較）
+- 更新：index.md（+2 頁面，+1 素材）
+
 ## [2026-04-09] ingest | No Vibes Allowed — Dex Horthy, HumanLayer
 
 - 來源：[[Clippings/No Vibes Allowed Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer.md]]（AI Engineer 2025 演講逐字稿）

@@ -161,6 +161,7 @@ Sub-agent 吸收所有搜尋/閱讀的 context 消耗，parent 只拿結論。
 
 - [[wiki/concepts/ai-agent]] — Context Compaction 機制的底層（Soft Trim / Compaction / Hard Clear / New Session）
 - [[wiki/concepts/rag]] — sub-agent research 的底層檢索機制
+- [[wiki/ai-workflow/harnessing-engineering]] — 更大的框架：Context Engineering 是 Harnessing 六層之一（層 1）。Harnessing 涵蓋工具系統、執行編排、記憶狀態、評估觀測、失敗恢復，是 Agent 落地的完整系統
 
 ## 相關素材
 
