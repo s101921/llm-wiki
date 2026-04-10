@@ -12,6 +12,55 @@ type: log
 
 ---
 
+## [2026-04-10] lint | 發現 4 個問題，全部修復
+
+- 🔴 **路徑錯誤（修復）**：`wiki/concepts/ai-memory-approaches.md` 被 7 個頁面引用為 `syntheses/`，全部改為 `concepts/`；index.md 移除 syntheses/ 區塊，改納入 concepts/ 下
+- 🔴 **孤立頁面（修復）**：6 個 `wiki/marketing/` SKILL 頁面加入 index.md「行銷執行 Skills」區塊
+- 🟡 **courses/ backlinks（修復）**：`wiki/concepts/ai-agent` 加入 ai-lobster-intro 反向連結；`wiki/ai-workflow/harnessing-engineering` 加入 harness-engineering-intro 反向連結
+- 🟡 **playwright-cli 橫向連結（修復）**：在 `wiki/concepts/ai-agent` 工具相關段落加入 playwright-cli 入口
+
+## [2026-04-10] ingest | playwright-cli — microsoft/playwright-cli GitHub README
+
+- 來源：[[Clippings/microsoftplaywright-cli CLI for common Playwright actions...]]（GitHub README）
+- 建立：[[wiki/summaries/playwright-cli]]
+- 建立：[[wiki/tools/playwright-cli]]（CLI vs MCP 決策框架、token 效率、session 管理）
+- 更新：[[wiki/ai-workflow/context-engineering-coding-agents]]（補充 CLI vs MCP 具體例子 + 反向連結）
+- 更新：index.md（+2 頁面，+1 素材）
+
+## [2026-04-10] ingest | Claude Skills 健檢 SOP（來自 inbox 示範）
+
+- 來源：inbox 隨手筆記（Type A：直接觀察 + 可重複 SOP）
+- 建立：[[wiki/ai-workflow/claude-skills-audit]]（type: workflow, status: draft）
+- 更新：[[wiki/ai-workflow/harnessing-engineering]] — 加入 skills-audit 反向連結（層 2 工具系統）
+- 更新：index.md（ai-workflow +1）
+
+## [2026-04-10] schema-upgrade | 新增 playbooks/ 層
+
+- 更新：CLAUDE.md — 新增 wiki/playbooks/ 目錄、type: playbook、Playbook 頁面格式規範
+- 建立：wiki/playbooks/（含 README）
+- 更新：index.md — 新增 Playbooks 區塊
+- 更新：LLM Wiki 使用說明.docx
+
+## [2026-04-10] schema-upgrade | 知識成熟度管道架構更新
+
+- 更新：CLAUDE.md — 新增 `inbox/`、`projects/` 層、`status` frontmatter、Phase 0 Inbox Triage、Skill/Workflow 頁格式、專案知識頁格式
+- 新增：`inbox/` 資料夾（零摩擦入口）
+- 新增：`projects/` 資料夾（專案知識層）
+- 批次更新：16 個 wiki 頁面加入 `status` 欄位（summaries → stable，其餘 → growing）
+- 更新：index.md — 加入 inbox、projects 區塊；加入成熟度分布表
+
+## [2026-04-09] course | AI 龍蝦是什麼？（one-pager，行銷人入門）
+
+- 建立：[[wiki/courses/ai-lobster-intro]]（3 張 Marp 投影片）
+- 同步存：Course/_outputs/ai-lobster-intro/slides.md
+- 更新：index.md（+1 課程）
+
+## [2026-04-09] course | Harness Engineering 行銷人一頁介紹（雙版本）
+
+- 建立：[[wiki/courses/harness-engineering-intro]]（原始版 + 廚房概念版，Marp 格式）
+- 同步存：Course/_outputs/harness-engineering-intro-outline.md
+- 更新：index.md（新增課程知識分類）
+
 ## [2026-04-09] ingest | Harnessing Engineering — 歡歡老師，AI 秘密花園
 
 - 來源：[[raw/AI 落地關鍵：什麼是 Harnessing Engineering？.md]]（影片逐字稿）

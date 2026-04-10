@@ -8,6 +8,7 @@ source_type: article
 source_url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 source_file: "[[Clippings/llm-wiki]]"
 sources: 1
+status: stable
 ---
 
 # LLM Wiki — Andrej Karpathy

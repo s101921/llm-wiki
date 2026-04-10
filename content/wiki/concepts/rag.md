@@ -5,6 +5,7 @@ updated: 2026-04-08
 type: concept
 tags: [RAG, 知識管理, 向量資料庫, LLM]
 sources: 2
+status: growing
 ---
 
 # RAG（Retrieval-Augmented Generation）

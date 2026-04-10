@@ -5,6 +5,7 @@ updated: 2026-04-09
 type: ai-workflow
 tags: [context-engineering, coding-agents, RPI, compaction, smart-zone, brownfield]
 sources: 1
+status: growing
 ---
 
 # Context Engineering for Coding Agents
@@ -33,8 +34,10 @@ Context Window（~168K tokens，以 Claude Code 為例）
 ```
 
 - **40%** 是經驗法則轉折點（依任務複雜度微調）
-- 太多 MCP 工具 = 一開始就在 Dumb Zone
+- 太多 MCP 工具 = 一開始就在 Dumb Zone（每個 MCP 工具的 schema 都佔用 context）
 - 讀整份 5M lines 的 monorepo 說明文件 = 把 Smart Zone 全部用在理解，沒空間做事
+
+> **實例：** [[wiki/tools/playwright-cli]] 用 CLI 取代 Playwright MCP，正是為了避免每次呼叫都把 accessibility tree 和工具 schema 載入 context。有 codebase 的 coding agent 應優先選 CLI 介面。
 
 ### Context 品質排序（最差 → 最好）
 
@@ -166,3 +169,4 @@ Sub-agent 吸收所有搜尋/閱讀的 context 消耗，parent 只拿結論。
 ## 相關素材
 
 - [[wiki/summaries/no-vibes-allowed-dex-horthy]] — 完整演講摘要
+- [[wiki/tools/playwright-cli]] — CLI vs MCP token 效率取捨的具體工具案例

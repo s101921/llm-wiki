@@ -8,6 +8,7 @@ source_type: video
 source_url: https://www.youtube.com/watch?v=2rcJdFuNbZQ
 source_file: "[[Clippings/解剖小龍蝦 — 以 OpenClaw 為例介紹 AI Agent 的運作原理.md]]"
 sources: 1
+status: stable
 ---
 
 # 解剖小龍蝦 — 李宏毅（Hung-yi Lee）
@@ -103,4 +104,4 @@ context window 終究會不夠，OpenClaw 的解法：
 
 - 建立：[[wiki/concepts/ai-agent]]
 - 更新：[[wiki/concepts/rag]]（補充 Agent 記憶系統中的 RAG 應用）
-- 更新：[[wiki/syntheses/ai-memory-approaches]]（補充 Agent 記憶架構）
+- 更新：[[wiki/concepts/ai-memory-approaches]]（補充 Agent 記憶架構）

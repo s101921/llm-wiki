@@ -5,6 +5,7 @@ updated: 2026-04-09
 type: summary
 tags: [AI Agent, 記憶系統, 開源, Nous Research, Skills]
 sources: 1
+status: stable
 ---
 
 # Hermes Agent — Nous Research 會記憶的 AI
@@ -85,4 +86,4 @@ sources: 1
 
 - [[wiki/tools/hermes-agent]] — 工具評估頁
 - [[wiki/concepts/ai-agent]] — AI Agent 架構（OpenClaw 為例）
-- [[wiki/syntheses/ai-memory-approaches]] — 各記憶方案比較
+- [[wiki/concepts/ai-memory-approaches]] — 各記憶方案比較

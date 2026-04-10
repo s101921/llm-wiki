@@ -5,6 +5,7 @@ updated: 2026-04-09
 type: ai-workflow
 tags: [Harnessing Engineering, AI Agent, Context Engineering, Prompt Engineering, 落地, 穩定性]
 sources: 1
+status: growing
 ---
 
 # Harnessing Engineering
@@ -128,8 +129,13 @@ AI 落地的核心挑戰，正在從「讓模型看起來更聰明」轉向「�
 ## 與其他概念的關係
 
 - [[wiki/ai-workflow/context-engineering-coding-agents]] — Harnessing 的子集：Context Engineering 在 Coding Agent 場景的實踐（Smart Zone、RPI、刻意壓縮）
+- [[wiki/ai-workflow/claude-skills-audit]] — 層 2「工具系統」的實踐：Skills 過多反而讓模型亂用，定期健檢 SOP
 - [[wiki/concepts/ai-agent]] — AI Agent 的底層機制（工具呼叫、記憶系統、心跳、Compaction）
 - [[wiki/concepts/rag]] — 工具系統中的資訊檢索機制
+
+## 相關課程
+
+- [[wiki/courses/harness-engineering-intro]] — Harness Engineering 行銷人入門（原始版 + 廚房概念版，以本頁概念為基礎）
 
 ## 相關素材
 

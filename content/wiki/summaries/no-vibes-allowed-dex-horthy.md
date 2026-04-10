@@ -5,6 +5,7 @@ updated: 2026-04-09
 type: summary
 tags: [context-engineering, coding-agents, research-plan-implement, compaction, brownfield]
 sources: 1
+status: stable
 ---
 
 # No Vibes Allowed: Solving Hard Problems in Complex Codebases

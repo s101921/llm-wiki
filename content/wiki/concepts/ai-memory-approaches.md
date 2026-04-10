@@ -5,6 +5,7 @@ updated: 2026-04-09
 type: synthesis
 tags: [記憶系統, 知識管理, RAG, LLM Wiki Pattern, MemPalace, Hermes Agent]
 sources: 3
+status: growing
 ---
 
 # AI 記憶方案比較：五種策略全覽

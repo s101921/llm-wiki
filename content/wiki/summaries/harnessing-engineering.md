@@ -5,6 +5,7 @@ updated: 2026-04-09
 type: summary
 tags: [Harnessing Engineering, AI Agent, Context Engineering, Prompt Engineering, 落地]
 sources: 1
+status: stable
 ---
 
 # Harnessing Engineering — AI 落地關鍵

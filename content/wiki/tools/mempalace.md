@@ -5,6 +5,7 @@ updated: 2026-04-08
 type: tool
 tags: [記憶系統, RAG, 本地AI, MCP, ChromaDB, 開源]
 sources: 1
+status: growing
 ---
 
 # MemPalace
@@ -49,7 +50,7 @@ sources: 1
 
 - 示範「AI 如何記住長期對話」——對比 context window 的限制
 - 說明向量資料庫（ChromaDB）的實際應用
-- 討論 AI 記憶的不同策略：RAG 檢索 vs 知識合成（見 [[wiki/syntheses/ai-memory-approaches]]）
+- 討論 AI 記憶的不同策略：RAG 檢索 vs 知識合成（見 [[wiki/concepts/ai-memory-approaches]]）
 - 討論 AI 產品發布透明度：作者主動公開更正過度聲明，是好案例
 
 ---
@@ -81,5 +82,5 @@ sources: 1
 ## 相關素材
 
 - [[wiki/summaries/mempalace]] — 完整 README 摘要
-- [[wiki/syntheses/ai-memory-approaches]] — vs LLM Wiki Pattern
+- [[wiki/concepts/ai-memory-approaches]] — vs LLM Wiki Pattern
 - [[wiki/concepts/rag]] — MemPalace 的底層檢索機制

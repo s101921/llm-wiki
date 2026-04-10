@@ -5,6 +5,7 @@ updated: 2026-04-09
 type: tool
 tags: [AI Agent, 記憶系統, 開源, Nous Research, Skills, 自我改進]
 sources: 1
+status: growing
 ---
 
 # Hermes Agent
@@ -87,6 +88,6 @@ Hermes Agent 的定位是「**會成長的 AI 頭腦**」，而非「每次對�
 ## 相關素材
 
 - [[wiki/summaries/hermes-agent-nous-research]] — 完整文章摘要
-- [[wiki/syntheses/ai-memory-approaches]] — 各記憶方案完整比較
+- [[wiki/concepts/ai-memory-approaches]] — 各記憶方案完整比較
 - [[wiki/tools/mempalace]] — MemPalace 工具評估
 - [[wiki/concepts/ai-agent]] — AI Agent 底層架構

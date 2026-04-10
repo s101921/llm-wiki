@@ -8,6 +8,7 @@ source_type: article
 source_url: https://github.com/milla-jovovich/mempalace
 source_file: "[[Clippings/milla-jovovichmempalace The highest-scoring AI memory system ever benchmarked. And it's free..md]]"
 sources: 1
+status: stable
 ---
 
 # MemPalace — Milla Jovovich & Ben Sigman
@@ -54,5 +55,5 @@ AI 對話結束後記憶就消失了——MemPalace 的解法是**儲存一切�
 
 - 建立：[[wiki/tools/mempalace]]
 - 建立：[[wiki/concepts/rag]]（補充 RAG 概念頁）
-- 建立：[[wiki/syntheses/ai-memory-approaches]]（與 LLM Wiki Pattern 比較）
+- 建立：[[wiki/concepts/ai-memory-approaches]]（與 LLM Wiki Pattern 比較）
 - 更新：[[wiki/concepts/llm-wiki-pattern]]（補充 MemPalace 作為對照案例）
