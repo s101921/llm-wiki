@@ -62,6 +62,7 @@ _尚無頁面_
 | [[wiki/ai-workflow/context-engineering-coding-agents]] | Coding Agent context 管理：Smart Zone、RPI、刻意壓縮、Sub-agent、Mental Alignment | 1 |
 | [[wiki/ai-workflow/harnessing-engineering]] | AI 落地六層架構：Agent = Model + Harnessing；工具系統、執行編排、記憶狀態、評估觀測、失敗恢復 | 1 |
 | [[wiki/ai-workflow/claude-skills-audit]] | Claude Skills 健檢 SOP：過多 Skill 反而讓模型亂用；四類問題（重複、模糊、衝突、沒用）判斷與刪改邏輯 | 0 |
+| [[wiki/ai-workflow/schedule-remote-agent]] | CCR 排程 Remote Agent 設定 SOP：建立 trigger、Prompt 撰寫原則、GitHub/Notion 整合、常見錯誤排查 | 0 |
 
 ---
 
@@ -89,7 +90,8 @@ _尚無頁面_
 |------|------|--------|
 | [[wiki/tools/mempalace]] | 本地 AI 記憶系統，Palace 結構 + ChromaDB，LongMemEval 96.6%，免費開源 | 1 |
 | [[wiki/tools/hermes-agent]] | Nous Research 開源 Agent，四層記憶 + 學習循環 + Skills 自動生成，MIT 免費 | 1 |
-| [[wiki/tools/playwright-cli]] | CLI 瀏覽器自動化，token-efficient，coding agent 首選；CLI vs MCP 決策框架 | 1 |
+| [[wiki/tools/playwright-cli]] | CLI 瀏覽器自動化，token-efficient，coding agent 首選；CLI vs MCP 決策框架；CCR 不可用 | 1 |
+| [[wiki/tools/ccr]] | Claude Code Remote 雲端執行環境：能力、硬性限制、資料持久化方式、瀏覽器替代方案 | 0 |
 
 ### 行銷執行 Skills（wiki/marketing/）
 

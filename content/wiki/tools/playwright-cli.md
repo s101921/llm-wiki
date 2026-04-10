@@ -111,6 +111,7 @@ playwright-cli show   # 開啟視覺化 dashboard，可即時監控所有 sessio
 
 - CLI 的 snapshot 是每個指令後的靜態快照，不是即時 DOM；如果頁面動態更新，需再次 `snapshot`
 - 命名 session 中的 `--persistent` profile 存放在 `.playwright-cli/` 目錄，要注意版控是否排除
+- ⚠️ **CCR 環境不可用**：playwright-cli 只能在本機 Claude Code 使用。Claude Code Schedule Remote Agent（CCR）的網路限制導致 Chromium 下載失敗，playwright 安裝會報錯。CCR 中需要瀏覽器的任務請改用 RSS Feed、Firecrawl MCP 或 Browserless 等雲端方案。詳見 [[wiki/tools/ccr]]
 
 ---
 

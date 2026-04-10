@@ -132,3 +132,11 @@ type: log
 
 - 建立初始目錄結構與 Templates
 - 架構基於 LLM Wiki pattern by Andrej Karpathy
+
+## [2026-04-10] ingest | Claude Code Remote (CCR) + Schedule Remote Agent
+
+- 來源：與 Warren 的對話（測試 CCR 排程設定過程）
+- 建立：[[wiki/tools/ccr]] — CCR 環境定義、能力、限制、瀏覽器替代方案
+- 建立：[[wiki/ai-workflow/schedule-remote-agent]] — CCR 排程設定 SOP、Prompt 原則、常見錯誤排查
+- 更新：[[wiki/tools/playwright-cli]] — 補充 CCR 不可用的限制與替代方案
+- 更新：index.md（+2 頁面）
