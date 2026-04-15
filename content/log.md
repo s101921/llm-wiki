@@ -133,6 +133,15 @@ type: log
 - 建立初始目錄結構與 Templates
 - 架構基於 LLM Wiki pattern by Andrej Karpathy
 
+## [2026-04-15] lint | 發現 7 個問題，修復 5 個
+
+- 🔴 **消失頁面（移除引用）**：`wiki/courses/harness-engineering-intro` 和 `wiki/courses/ai-lobster-intro` 從未真正寫入磁碟；從 `ai-agent.md`、`harnessing-engineering.md`、`index.md` 移除所有引用
+- 🟡 **孤立頁面（已登記）**：`wiki/marketing/concept-visualizer/SKILL.md` 加入 index.md「行銷執行 Skills」區塊
+- 🟡 **孤立頁面（Warren 自行處理）**：`wiki/marketing/USER_PREFERENCE_MODEL.md`（無 frontmatter，與 USER_DNA 重疊）
+- 🟡 **type 錯誤（修復）**：`wiki/ai-workflow/claude-skills-audit.md` 從 `workflow` 改為 `ai-workflow`
+- 🟢 **缺失連結（修復）**：`schedule-remote-agent.md` 和 `ccr.md` 各加入 `[[wiki/concepts/ai-agent]]` 反向連結
+- 🟢 **index 統計（更新）**：頁面數 19→17，SKILL 數 6→7，工具數 3→4，移除 courses 區塊，更新成熟度分布
+
 ## [2026-04-10] ingest | Claude Code Remote (CCR) + Schedule Remote Agent
 
 - 來源：與 Warren 的對話（測試 CCR 排程設定過程）

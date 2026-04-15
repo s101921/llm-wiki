@@ -2,7 +2,7 @@
 title: Claude Skills 健檢 SOP
 date: 2026-04-10
 updated: 2026-04-10
-type: workflow
+type: ai-workflow
 status: draft
 tags: [Claude Code, Skills, AI 工具管理, Harnessing, SOP]
 sources: 0

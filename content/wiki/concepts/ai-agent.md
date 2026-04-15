@@ -143,10 +143,6 @@ Context window 有上限，OpenClaw 的壓縮策略（由輕到重）：
 - [[wiki/ai-workflow/context-engineering-coding-agents]] — Coding Agent 的進階 context 管理：Smart Zone、RPI、刻意壓縮。OpenClaw 的 Compaction 策略與 Dex Horthy 的 Intentional Compaction 是同一概念的兩個面向
 - [[wiki/ai-workflow/harnessing-engineering]] — AI Agent 的外殼工程：Agent = Model + Harnessing，六層穩定執行架構
 
-## 相關課程
-
-- [[wiki/courses/ai-lobster-intro]] — AI 龍蝦是什麼？（行銷人入門，以本頁概念為基礎）
-
 ## 相關素材
 
 - [[wiki/summaries/hung-yi-lee-openclaw-agent]] — 完整影片摘要

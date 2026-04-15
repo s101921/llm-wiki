@@ -182,3 +182,4 @@ Notion MCP 透過 claude.ai 的 OAuth 連接，不需要 Notion API Token。
 
 - [[wiki/tools/ccr]] — CCR 環境能力與限制詳解
 - [[wiki/tools/playwright-cli]] — 本機瀏覽器自動化（CCR 不可用）
+- [[wiki/concepts/ai-agent]] — Cron Job 機制的底層概念（含心跳、排程、Compaction 說明）

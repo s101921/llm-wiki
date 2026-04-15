@@ -133,10 +133,6 @@ AI 落地的核心挑戰，正在從「讓模型看起來更聰明」轉向「�
 - [[wiki/concepts/ai-agent]] — AI Agent 的底層機制（工具呼叫、記憶系統、心跳、Compaction）
 - [[wiki/concepts/rag]] — 工具系統中的資訊檢索機制
 
-## 相關課程
-
-- [[wiki/courses/harness-engineering-intro]] — Harness Engineering 行銷人入門（原始版 + 廚房概念版，以本頁概念為基礎）
-
 ## 相關素材
 
 - [[wiki/summaries/harnessing-engineering]] — 完整影片摘要

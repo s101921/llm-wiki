@@ -187,3 +187,4 @@ cat ~/Desktop/llm-wiki/sync.log    # sync.sh 執行記錄
 
 - [[wiki/ai-workflow/schedule-remote-agent]] — 設定 CCR 排程任務的 SOP
 - [[wiki/tools/playwright-cli]] — 本機瀏覽器自動化（CCR 不可用，本機 Claude Code 可用）
+- [[wiki/concepts/ai-agent]] — Cron Job 概念的底層說明（心跳機制、排程、Compaction）

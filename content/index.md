@@ -68,10 +68,7 @@ _尚無頁面_
 
 ## 課程知識（wiki/courses/）
 
-| 頁面 | 摘要 | 素材數 |
-|------|------|--------|
-| [[wiki/courses/harness-engineering-intro]] | Harness Engineering 行銷人入門：原始版 + 廚房概念版雙版本一頁簡報 | 2 |
-| [[wiki/courses/ai-lobster-intro]] | AI 龍蝦（OpenClaw）行銷人入門：動口 vs 動手、記了個寂寞、Meta 刪郵件事件 | 2 |
+_尚無頁面_
 
 ---
 
@@ -105,6 +102,7 @@ _尚無頁面_
 | [[wiki/marketing/course-brand-customizer/SKILL]] | 為課程客製化品牌提示詞，替換公版筆記並存至 Notion |
 | [[wiki/marketing/presentation-architect/SKILL]] | 主題 → 完整簡報規格（YAML + Slidev 程式碼 + AI 圖片 Prompt）|
 | [[wiki/marketing/strong-constraint-prompt-optimizer/SKILL]] | 弱 Prompt → 強約束語法（特徵鎖定、環境匹配、隨機抑制）|
+| [[wiki/marketing/concept-visualizer/SKILL]] | 知識視覺化：任何概念 → PPTX（5 版型，Warren 品牌色，HTML→WeasyPrint→PPTX 管線）|
 
 ---
 
@@ -145,14 +143,15 @@ _尚無頁面_
 ---
 
 ## 統計
-- 總 wiki 頁面：19（4 概念、3 工具、7 摘要、3 ai-workflow、2 課程）+ 6 行銷 SKILL
+- 總 wiki 頁面：17（4 概念、4 工具、7 摘要、4 ai-workflow、0 課程）+ 7 行銷 SKILL
 - 已 ingest 素材：7
 - 進行中專案：0
 - Inbox 待處理：0
-- 最後更新：2026-04-10
+- 最後更新：2026-04-15
 
 ### 成熟度分布
 | status | 數量 | 頁面 |
 |--------|------|------|
-| stable | 9 | 7 summaries + 2 courses |
-| growing | 10 | 4 concepts + 3 tools + 3 ai-workflow |
+| stable | 7 | 7 summaries |
+| growing | 8 | 4 concepts + 4 tools |
+| draft | 2 | 2 ai-workflow（ccr, schedule-remote-agent）|
