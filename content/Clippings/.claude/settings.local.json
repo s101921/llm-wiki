@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \" content = open\\('/Users/warren/Desktop/Claude Code/LLM Wiki/Clippings/解剖小龍蝦 — 以 OpenClaw 為例介紹 AI Agent 的運作原理.md', encoding='utf-8'\\).read\\(\\) keyword = '知識庫' idx = content.find\\(keyword\\) while idx != -1: print\\('---'\\) print\\(content[max\\(0,idx-200\\):idx+500]\\) idx = content.find\\(keyword, idx+1\\) \")",
+      "Bash(python3 *)",
+      "Read(//private/tmp/**)",
+      "Bash(node -e \"require\\('pptxgenjs'\\); console.log\\('ok'\\)\")",
+      "Bash(npm list *)",
+      "Bash(node /tmp/rag-slides.js)",
+      "Bash(cp /tmp/rag-slides.js \"/Users/warren/Desktop/Slide dev testing/my-presentation/rag-slides.js\")",
+      "Bash(node rag-slides.js)",
+      "Bash(cp /tmp/rag-slides.js \"/Users/warren/Desktop/Slide dev testing/my-presentation/rag-slides.cjs\")",
+      "Bash(node rag-slides.cjs)",
+      "Bash(pdftoppm -jpeg -r 150 \"/Users/warren/Desktop/Slide dev testing/my-presentation/知識庫RAG簡報.pdf\" /tmp/rag-slide)",
+      "Bash(ls /tmp/rag-slide*.jpg)",
+      "Bash(pdftoppm *)"
+    ]
+  }
+}
