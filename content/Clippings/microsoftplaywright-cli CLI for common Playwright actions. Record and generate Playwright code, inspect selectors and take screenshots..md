@@ -1,8 +1,6 @@
 ---
 title: "microsoft/playwright-cli: CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots."
 source: "https://github.com/microsoft/playwright-cli"
-author:
-published:
 created: 2026-04-10
 description: "CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots. - microsoft/playwright-cli"
 tags:

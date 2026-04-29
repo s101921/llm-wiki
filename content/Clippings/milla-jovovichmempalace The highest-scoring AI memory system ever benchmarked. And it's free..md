@@ -1,8 +1,6 @@
 ---
 title: "milla-jovovich/mempalace: The highest-scoring AI memory system ever benchmarked. And it's free."
 source: "https://github.com/milla-jovovich/mempalace"
-author:
-published:
 created: 2026-04-08
 description: "The highest-scoring AI memory system ever benchmarked. And it's free. - milla-jovovich/mempalace"
 tags:
