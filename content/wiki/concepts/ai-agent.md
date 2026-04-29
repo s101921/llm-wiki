@@ -142,6 +142,10 @@ Context window 有上限，OpenClaw 的壓縮策略（由輕到重）：
 - [[wiki/concepts/ai-memory-approaches]] — 不同記憶策略的比較
 - [[wiki/ai-workflow/context-engineering-coding-agents]] — Coding Agent 的進階 context 管理：Smart Zone、RPI、刻意壓縮。OpenClaw 的 Compaction 策略與 Dex Horthy 的 Intentional Compaction 是同一概念的兩個面向
 - [[wiki/ai-workflow/harnessing-engineering]] — AI Agent 的外殼工程：Agent = Model + Harnessing，六層穩定執行架構
+- [[wiki/ai-workflow/llm-interactive-chart]] — bash_tool tool-use 實踐案例：Python 計算 → LLM 推理 → Chart.js 渲染的三步流程
+- [[wiki/concepts/multimodal-llm]] — AI Agent 的感知輸入層：模態編碼器讓 Agent 能「看」圖片、「聽」音訊
+- [[wiki/concepts/code-execution-sandbox]] — 沙盒是 Agent tool-use 的執行環境；五大失敗原因
+- [[wiki/concepts/computer-architecture]] — 七層架構是理解 Agent 與 OS 關係的基礎；LLM 正成為新一層 Shell
 
 ## 相關素材
 

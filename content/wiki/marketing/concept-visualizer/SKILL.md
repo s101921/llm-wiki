@@ -212,3 +212,8 @@ cp /home/claude/concept.pptx /mnt/user-data/outputs/
 - ❌ 使用 `vh`/`vw` 單位（WeasyPrint 不支援）
 - ❌ 單一投影片超過 15 個節點（必須分層或拆張）
 - ❌ 忘記 `@page { size: 1280px 720px; margin: 0; }` — 這是正確渲染的關鍵
+
+## 相關工具
+
+- `[[wiki/concepts/presentation-generation-routes]]` — concept-visualizer 使用「路線G」（WeasyPrint 向量 PDF 中轉）；了解七條路線的完整對比
+- `[[wiki/tools/gemini-canvas]]` — 若需要快速原型替代方案（HTML 即時預覽）

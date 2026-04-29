@@ -105,30 +105,35 @@ description: >
 
 ## Step 1.5：簡報視覺 DNA 決策
 
-風格提取完成後，**必須執行此步驟**。
-強制讀取 `references/presentation-visual.md`，再依以下邏輯執行：
+風格提取完成後，**根據以下「簡報視覺風格庫」進行決策**。
+
+### 簡報視覺風格庫 (Presentation Visual Styles)
+
+| 風格類型 | 核心特徵 | 適用場景 | image_base_prompt 核心詞 |
+| :--- | :--- | :--- | :--- |
+| **A: 極簡黑白** | 高對比、大標題極大、幾何線條、單一強調色 | 學術、法律、嚴肅議題 | minimal editorial design, extreme typographic contrast, intentional negative space, monochromatic |
+| **B: 3D 超現實** | 畫面中央 3D 主角物件、豐富材質（液態金屬/玻璃/毛茸茸） | 科技、AI、品牌行銷 | CGI 3D hero object, iridescent material, liquid metal, cinematic volumetric light |
+| **C: CGI 夢幻** | 完整環境場景、具明顯景深、粉嫩或天空漸層色調 | 品牌故事、未來願景 | full CGI dreamscape environment, pastel gradient sky, reflective surface, magical world |
+| **D: 霓虹混合** | 真實攝影與 CGI 元素並置、風格刻意衝突、霓虹電光 | 社群行銷、Z 世代 | neon mixed media, real photography + CGI digital, intentional style clash, cyberpunk editorial |
+| **E: 資訊海報** | 高密度資訊但排版清晰、用色塊區隔、右側視覺錨點 | 流程說明、數據分析 | info-poster layout, bold color block highlights, right-side visual anchor, scannable |
+
+### 核心設計原則
+- **簡報即海報**：每一頁都是獨立的 Artwork，文字是視覺元素，大小落差要極端。
+- **視覺錨點多樣化**：主體物件根據每頁主題獨立發想（如：3D 物件、抽象幾何、超大字），同一類型主體不連續超過 2 頁。
+- **光線與構圖**：禁止平光（需有明確光源方向）；深淺背景交替出現以維持節奏。
+- **中英文混排**：中文主標 + 英文副標/分類，利用字體風格衝突創造層次。
 
 ### 風格決策路徑（依優先順序）
 
 **① 使用者上傳了風格參考圖？**
-→ 從圖片直接萃取四個維度：色彩配置、字體氛圍、版面構圖、整體氛圍關鍵字
-→ `presentation-visual.md` 的 A–E **只作為延伸參考**，不強制套用
-→ 以圖片 DNA 為主，自由推導設計語言
+→ 從圖片萃取色彩、字體、版面與氛圍。
+→ 上述 A–E **僅作延伸參考**，以圖片 DNA 為主，自由推導。
 
-**② 使用者指定了特定風格（例：「日式極簡」「賽博龐克」「奢華感」「毛玻璃風」）？**
-→ 依據該風格的審美邏輯自由推導，**不限定在 A–E 內**
-→ 從 A–E 中借用最接近的語言元素，混合使用
-→ 例：「日式極簡」→ 從 A（極簡）借用排版邏輯，但色調換成日系低飽和莫蘭迪
+**② 使用者指定了特定風格（例：「日式極簡」「賽博龐克」）？**
+→ 依該風格審美邏輯推導，從 A–E 中借用接近的元素（如：「日式極簡」借用 A 的排版）。
 
-**③ 使用者提到 Warren / 瓦倫 / Warren色 / MKT?Whatever？**
-→ 優先載入 `presentation-visual.md` 的 **Warren 品牌色系統**
-→ Warren Blue `#3C80ED` 作為色彩主軸，覆蓋其他色彩決策
-→ 根據主題情境選擇對應的情境色票（奢華/時尚/文青/商業/流行）
-→ 風格 A–E 仍正常執行，只有色彩部分由 Warren 系統接管
-
-**④ 使用者完全沒有給任何風格線索？**
-→ 才從 A–E 中選最適合主題情境的作為起點
-→ **選「最有記憶點的」，不選「最安全的」**
+**③ 使用者完全沒有給任何風格線索？**
+→ 從 A–E 中選最適合主題情境的作為起點，**選「最有記憶點的」，不選「最安全的」**。
 
 ---
 
@@ -136,7 +141,7 @@ description: >
 
 | 項目 | 決策 |
 |-----|------|
-| 決策路徑 | [①圖片萃取 / ②指定風格 / ③Warren / ④自動推斷] |
+| 決策路徑 | [①圖片萃取 / ②指定風格 / ③自動推斷] |
 | 主風格描述 | [一句話描述整份簡報的視覺方向] |
 | 萃取的色彩系統 | [主色 hex + 強調色 hex + 對比策略] |
 | 萃取的版面語言 | [分割邏輯 + 字體風格 + 裝飾元素語言] |
@@ -145,7 +150,7 @@ description: >
 | 強調色 hex | [具體色碼 + 用途] |
 | 視覺錨點多樣化計畫 | [列出每頁預計使用的不同主體類型，確認無重複] |
 | 光線方向與冷暖 | [例：左下冷光 / 右上暖光] |
-| 借用的設計語言 | [從哪個風格或 reference 借用了哪些元素] |
+| 借用的設計語言 | [從哪個風格 or reference 借用了哪些元素] |
 | image_base_prompt | [完整字串，後續每頁直接引用] |
 
 > ⚠️ **多樣化檢查**：填寫「視覺錨點多樣化計畫」時，確認同一種主體類型不連續出現超過 2 頁。
@@ -214,7 +219,7 @@ global_design_spec:
 - 設計元素位置與外觀（色塊、線條、幾何、圖標）
 - 文字區塊的視覺呈現方式（位置、字重、顏色）——**描述呈現方式，不重複文字內容**
 
-第一階段 `visual_text_prompt` **不包含** base_prompt 錨點與技術品質詞，那些在 Step 3.5 才加入。
+第一階段 `visual_text_prompt` **不包含** base_prompt 錨點與技術品質詞。
 
 ```yaml
 slide_id: "p1"
@@ -239,115 +244,13 @@ visual_text_prompt: >
 
 ---
 
-## Step 3.5：圖片 Prompt 輸出模式（按需觸發）
-
-當使用者說「幫我生成圖片 Prompt」「輸出所有圖片提示詞」「給我 p3 的圖片 Prompt」等，進入此模式。
-
-### 觸發方式
-
-| 使用者指令 | 輸出範圍 |
-|----------|---------|
-| 「所有圖片 Prompt」「全部輸出」 | 所有投影片逐頁輸出 |
-| 「p3 的 Prompt」「第三張」 | 只輸出指定頁 |
-| 「重新生成 p5 的 Prompt」 | 重新生成指定頁，其餘不動 |
-
-### 核心概念：每張投影片是一件 Artwork
-
-**圖片 Prompt 的目標不是「簡報背景圖」，而是把整張投影片設計成一張廣告海報。**
-文字內容、排版位置、色塊、線條、圖標——全部翻譯進圖片 Prompt，生成出來就是完整可用的那一頁投影片，不需要再疊加任何文字。
-
-### 翻譯邏輯：YAML → Artwork Prompt
-
-將投影片的每個欄位翻譯成畫面描述語言：
-
-| YAML 欄位 | 翻譯成畫面描述 |
-|----------|-------------|
-| `content.title` | 畫面中的大標題文字，**原始語言保留**，描述字體粗細、位置、大小比例 |
-| `content.subtitle` | 副標題文字的位置與視覺層次，**原始語言保留** |
-| `content.body_text` | 條列文字區塊，**原始語言保留**，描述位置、字體大小、對齊方式 |
-| `visual_instruction.composition` | 轉化為構圖描述（左右分割、置中、網格等） |
-| `visual_instruction.elements` | 轉化為具體設計元素（色塊、線條、幾何形狀、圖標） |
-| `visual_instruction.background` | 背景色彩與材質 |
-| `visual_text_prompt`（第一階段） | 直接延伸擴充，加上 base_prompt 錨點與技術品質詞 |
-
-### 輸出格式
-
-每頁輸出一個獨立的 Prompt 區塊（不是 YAML，是可直接貼進 Nano Banana 的純文字）：
-
-```
-─────────────────────────
-pX｜[頁面類型]
-─────────────────────────
-[base_prompt 完整貼上],
-[版面構圖描述：文字區塊位置、大小、對齊],
-[標題文字視覺描述：字重、顏色、位置],
-[副標題與內文區塊描述],
-[設計元素：色塊、線條、幾何、圖標],
-[光線與氛圍],
-[本頁色彩細節]
-
-🚫 Negative Prompt:
-[本頁專屬禁用詞]
-
-📱 Nano Banana 建議參數:
-比例：16:9 ｜ 風格強度：[建議值]
-```
-
-### 圖片 Prompt 撰寫規則
-
-- **base_prompt 必須完整複製貼上**於每頁開頭，不可省略或改寫
-- 文字內容要描述「視覺呈現方式」，例如：
-  - ✅ `bold white headline "AI 圖像生成的版權迷宮" positioned left-center, extra-large type filling 40% of frame width`
-  - ❌ `title text here`
-- 條列內容描述為視覺區塊：`five numbered text rows in clean sans-serif, left-aligned on right panel`
-- 色塊與設計元素要有具體尺寸與位置：`thin #2D5BE3 vertical rule on left edge, 4px width`
-- 遵循 image-prompt-generator-v2 四維度框架（風格光譜 × 用途 × 情緒 × 平台）
-- 每頁 Prompt 總長度：150–250 字英文
-
----
-
-## Step 3.6：Slidev 程式碼輸出（按需觸發）
-
-當使用者說「幫我輸出 Slidev 程式碼」「要有動態」「要能分元素出場」「給我可以跑的程式碼」等，進入此模式。
-
-**強制讀取 `references/slidev-components.md`**，依其中的規則與模板執行輸出。
-
-### 三層架構原則
-
-```
-Layer 1（AI 生成）：純背景圖，無任何文字與元素
-Layer 2（HTML）  ：色塊、icon、裝飾幾何 → v-click 控制出場
-Layer 3（HTML）  ：所有文字內容 → v-click 控制出場，絕不 AI 生成
-```
-
-### 每次輸出的三個部分
-
-- **① 安裝說明**：只在對話中第一次輸出 Slidev 程式碼時附上
-- **② 每頁 Slidev 程式碼**：從 `slidev-components.md` 選取對應頁面類型的模板，填入 `content` 與 `visual_instruction` 數值
-- **③ 背景圖專用 Prompt**：在 Step 3.5 的 Prompt 基礎上，加上無文字指令與留空區域描述
-
-所有模板、CSS 動畫庫、v-click 規則、背景圖修改邏輯，詳見 `references/slidev-components.md`。
-
----
-
 ## 最終輸出格式
 
-使用者觸發不同指令時，輸出對應的內容：
+使用者觸發預設指令時，輸出對應的內容：
 
 | 使用者說 | Claude 輸出 |
 |---------|-----------|
 | （預設，直接說主題） | YAML 設計規格（含 global_design_spec + 所有頁面） |
-| 「給我圖片 Prompt」 | Step 3.5 格式的完整圖片提示詞（含文字版） |
-| 「給我 Slidev 程式碼」「要有動態」 | Step 3.6 格式：安裝說明 + 每頁 Slidev 程式碼 + 背景圖專用 Prompt |
-| 「全部給我」 | YAML + 圖片 Prompt + Slidev 程式碼，三段一次輸出 |
-
-**預設 YAML 輸出結尾，永遠附上以下提示：**
-
-```
-💡 需要圖片提示詞時，說「幫我輸出所有圖片 Prompt」
-💡 需要 Slidev 動態簡報程式碼，說「給我 Slidev 程式碼」
-💡 一次全部輸出，說「全部給我」
-```
 
 ---
 
@@ -372,11 +275,3 @@ Layer 3（HTML）  ：所有文字內容 → v-click 控制出場，絕不 AI �
 - 缺少細節時，主動生成符合主題的專業內容
 - 風格模糊時，做出明確決定（「霧面科技藍」比「藍色風格」好）
 - 視覺一致性：p1 到最後一頁必須像同一份簡報
-
----
-
-## 相關工具
-
-- `[[wiki/concepts/presentation-generation-routes]]` — 七條簡報生成路線全覽；presentation-architect 使用路線A（Slidev 截圖流）
-- `[[wiki/tools/gemini-canvas]]` — 快速原型替代方案：單一 HTML 檔在 Gemini 對話中即時預覽，不需 Slidev 環境
-- `[[wiki/marketing/concept-visualizer/SKILL]]` — 知識視覺化輸出：PPTX 格式，適合不需要動態效果的場景

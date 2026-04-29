@@ -131,3 +131,4 @@ playwright-cli show   # 開啟視覺化 dashboard，可即時監控所有 sessio
 
 - [[wiki/summaries/playwright-cli]] — 完整 README 摘要
 - [[wiki/ai-workflow/context-engineering-coding-agents]] — CLI 選擇直接回應「太多 MCP 工具 = Dumb Zone」，是 context 管理的實際工具選型
+- [[wiki/ai-workflow/dynamic-web-scraping]] — Playwright 在動態網站爬蟲中的具體應用 SOP（三條路線對比）

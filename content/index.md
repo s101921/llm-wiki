@@ -63,6 +63,11 @@ _尚無頁面_
 | [[wiki/ai-workflow/harnessing-engineering]] | AI 落地六層架構：Agent = Model + Harnessing；工具系統、執行編排、記憶狀態、評估觀測、失敗恢復 | 1 |
 | [[wiki/ai-workflow/claude-skills-audit]] | Claude Skills 健檢 SOP：過多 Skill 反而讓模型亂用；四類問題（重複、模糊、衝突、沒用）判斷與刪改邏輯 | 0 |
 | [[wiki/ai-workflow/schedule-remote-agent]] | CCR 排程 Remote Agent 設定 SOP：建立 trigger、Prompt 撰寫原則、GitHub/Notion 整合、常見錯誤排查 | 0 |
+| [[wiki/ai-workflow/llm-interactive-chart]] | CSV → 互動圖表三步流程：bash_tool（Python 計算）→ LLM 推理設計 → show_widget（Chart.js 渲染） | 1 |
+| [[wiki/ai-workflow/html-chart-export]] | HTML 圖表下載 SOP：Canvas API（Chart.js）/ ECharts toolbox / html2canvas DOM截圖；防透明背景、高解析度、CORS 陷阱 | 1 |
+| [[wiki/ai-workflow/google-api-integration]] | Google Sheets API + Gemini API 整合 SOP：GCP 設定、服務帳戶、Claude Code 代理 vs 傳統 IDE/CLI 開發比較 | 2 |
+| [[wiki/ai-workflow/python-html-data-dashboard]] | Python + HTML 數據儀表板架構：代碼執行分離模式、三種數據傳遞方案（變數替換/Jinja2/Streamlit）、LLM Data Agent 完整流程 | 2 |
+| [[wiki/ai-workflow/dynamic-web-scraping]] | 動態網站爬蟲 SOP：三條路線（AJAX 接口/Playwright/ScraperAPI）、判斷動態網站方法、穩定性清單 | 1 |
 
 ---
 
@@ -80,6 +85,13 @@ _尚無頁面_
 | [[wiki/concepts/rag]] | Retrieval-Augmented Generation — 向量檢索，每次查詢重新推導；Agent 記憶底層機制 | 2 |
 | [[wiki/concepts/ai-agent]] | AI Agent 架構：工具呼叫、記憶系統、心跳、Cron Job、Context Compaction；以 OpenClaw 為例 | 1 |
 | [[wiki/concepts/ai-memory-approaches]] | AI 記憶五方案比較：RAG / AI Agent 記憶 / MemPalace / Hermes Agent / LLM Wiki Pattern（綜合分析）| 4 |
+| [[wiki/concepts/multimodal-llm]] | 多模態 LLM 架構：模態編碼器（CLIP 對比學習）+ 投影層（語意對齊）+ LLM 主幹；圖片/音訊 tokenization；直接 Embedding vs 先轉文字 | 1 |
+| [[wiki/concepts/code-execution-sandbox]] | 程式碼執行沙盒：五大失敗原因（依賴庫缺失、I/O錯誤、超時、網路隔離、意圖判讀）；提高成功率的 Prompt 策略 | 1 |
+| [[wiki/concepts/web-search-hierarchy]] | Web Search / Fetch / Deep Research 三層架構；Deep Research 六大資料限制；社群平台可見性；GEO 內容策略；動態爬蟲三條路線 | 3 |
+| [[wiki/concepts/computer-architecture]] | 電腦系統七層架構（電壓→硬體→Firmware→Kernel→System Call→CLI/GUI→App）+ LLM 成為新超級 Shell；AI-Native OS 展望 | 1 |
+| [[wiki/concepts/automation-platform-vs-ai-agent]] | Make/n8n vs AI Agent 存亡辯論：MCP 瓦解護城河（攻方）vs 維運盲區（守方）；結論：企業缺的是「管程式的能力」 | 1 |
+| [[wiki/concepts/python-file-ecosystem]] | Python 檔案生態系：六大類格式（Office/圖表/數據/影像/音視訊/壓縮）與對應套件；膠水語言定位；二進制寫入 vs 模板渲染 | 1 |
+| [[wiki/concepts/presentation-generation-routes]] | 簡報生成七條技術路線：可編輯 PPTX 的判斷標準、路線A-G 完整說明（截圖流/Reveal.js/python-pptx/pptxgenjs/Gemini Canvas/PPTAgent/WeasyPrint）| 1 |
 
 ### 工具（wiki/tools/）
 
@@ -89,6 +101,7 @@ _尚無頁面_
 | [[wiki/tools/hermes-agent]] | Nous Research 開源 Agent，四層記憶 + 學習循環 + Skills 自動生成，MIT 免費 | 1 |
 | [[wiki/tools/playwright-cli]] | CLI 瀏覽器自動化，token-efficient，coding agent 首選；CLI vs MCP 決策框架；CCR 不可用 | 1 |
 | [[wiki/tools/ccr]] | Claude Code Remote 雲端執行環境：能力、硬性限制、資料持久化方式、瀏覽器替代方案 | 0 |
+| [[wiki/tools/gemini-canvas]] | Gemini Canvas HTML 簡報生成：Single-File Mandate、Canvas Block Syntax、防呆 Prompt 規範、PPTX 匯出相容性 | 1 |
 
 ### 行銷執行 Skills（wiki/marketing/）
 
@@ -143,15 +156,15 @@ _尚無頁面_
 ---
 
 ## 統計
-- 總 wiki 頁面：17（4 概念、4 工具、7 摘要、4 ai-workflow、0 課程）+ 7 行銷 SKILL
-- 已 ingest 素材：7
+- 總 wiki 頁面：30（11 概念、5 工具、7 摘要、9 ai-workflow、0 課程）+ 7 行銷 SKILL
+- 已 ingest 素材：22（raw/ 尚有 1 個檔案因編碼問題待處理：Mac 用戶 Python 開發環境教學指南.md）
 - 進行中專案：0
 - Inbox 待處理：0
-- 最後更新：2026-04-15
+- 最後更新：2026-04-29
 
 ### 成熟度分布
 | status | 數量 | 頁面 |
 |--------|------|------|
 | stable | 7 | 7 summaries |
-| growing | 8 | 4 concepts + 4 tools |
-| draft | 2 | 2 ai-workflow（ccr, schedule-remote-agent）|
+| growing | 8 | 4 concepts（original）+ 4 tools（original）|
+| draft | 15 | 7 concepts（new batch）+ 2 tools（ccr, gemini-canvas）+ 6 ai-workflow（llm-interactive-chart + new batch）|

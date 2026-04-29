@@ -63,3 +63,4 @@ RAG 是目前企業 AI 最常見的私有知識整合方式，課程中常作為
 
 - [[wiki/summaries/llm-wiki-karpathy]] — Karpathy 對 RAG 限制的批評
 - [[wiki/summaries/mempalace]] — 以 RAG 為基礎的高性能記憶系統案例
+- [[wiki/concepts/web-search-hierarchy]] — Web Search / Fetch / Deep Research 三層架構：RAG 是 web_fetch 概念的系統化延伸，加入向量索引

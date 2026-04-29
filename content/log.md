@@ -149,3 +149,52 @@ type: log
 - 建立：[[wiki/ai-workflow/schedule-remote-agent]] — CCR 排程設定 SOP、Prompt 原則、常見錯誤排查
 - 更新：[[wiki/tools/playwright-cli]] — 補充 CCR 不可用的限制與替代方案
 - 更新：index.md（+2 頁面）
+
+## [2026-04-29] ingest | Gemini Canvas 簡報生成 + LLM 互動式圖表流程
+
+- 來源：inbox/（2 個待處理檔案）
+- 建立：[[wiki/tools/gemini-canvas]] — Canvas 工具評估：Single-File Mandate、Canvas Block Syntax、防呆 Prompt 規範、PPTX 匯出相容性
+- 建立：[[wiki/ai-workflow/llm-interactive-chart]] — CSV → 互動圖表三步 SOP（bash_tool Python 計算 → LLM 推理設計 → show_widget Chart.js 渲染）
+- 更新：index.md（+2 頁面，素材數 7→9）
+- inbox/ 已清空（兩個檔案均已 ingest）
+
+## [2026-04-29] lint | 發現 6 個問題，修復 6 個
+
+- 🔴 **連結格式錯誤（修復）**：`llm-interactive-chart.md` 中兩個連結有多餘 `.md` 後綴 → 已移除
+- 🔴 **過期路徑（修復）**：`gemini-canvas.md` 和 `llm-interactive-chart.md` 中的 `inbox/` 連結已改為 `raw/`
+- 🟡 **缺失交叉連結（修復）**：`gemini-canvas.md` 加入 `presentation-architect/SKILL` 和 `concept-visualizer/SKILL` 連結
+- 🟡 **缺失交叉連結（修復）**：`llm-interactive-chart.md` 加入 `context-engineering-coding-agents` 連結
+- 🟡 **缺失反向連結（修復）**：`ai-agent.md` 加入 `llm-interactive-chart` 作為 tool-use 實踐案例
+- 🟡 **缺失反向連結（修復）**：`presentation-architect/SKILL.md` 加入 `gemini-canvas` 和 `concept-visualizer` 相關工具區塊
+- 🟢 **新文章候選（登記）**：AI 視覺化輸出三路徑比較頁（gemini-canvas / presentation-architect / concept-visualizer）
+
+## [2026-04-29] ingest | raw/ 批次處理（14 個檔案）
+
+- 發現 raw/ 中有 15 個未處理檔案；本次處理 14 個（1 個因 Mac 編碼問題待處理）
+- 建立 **7 個 concepts 頁面**：
+  - [[wiki/concepts/multimodal-llm]] — 三元件架構、CLIP 對比學習、tokenization、直接 Embedding vs 先轉文字
+  - [[wiki/concepts/code-execution-sandbox]] — 沙盒五大失敗原因、Prompt 提高成功率策略
+  - [[wiki/concepts/web-search-hierarchy]] — 三層搜尋架構、Deep Research 六大限制、GEO 策略、動態爬蟲路線
+  - [[wiki/concepts/computer-architecture]] — 七層架構、LLM 作為新 Shell、AI-Native OS 展望
+  - [[wiki/concepts/automation-platform-vs-ai-agent]] — Make/n8n vs AI Agent 辯論；「管程式的能力」核心洞察
+  - [[wiki/concepts/python-file-ecosystem]] — 六大格式類別與套件對應；膠水語言定位
+  - [[wiki/concepts/presentation-generation-routes]] — 七條簡報生成路線；可編輯 PPTX 判斷標準
+- 建立 **4 個 ai-workflow 頁面**：
+  - [[wiki/ai-workflow/html-chart-export]] — Chart.js / ECharts / html2canvas 圖表下載 SOP
+  - [[wiki/ai-workflow/google-api-integration]] — GCP + Google Sheets API + Gemini API 整合 SOP；Claude Code vs IDE/CLI 比較
+  - [[wiki/ai-workflow/python-html-data-dashboard]] — Python + HTML 三層數據分析架構；LLM Data Agent 完整流程
+  - [[wiki/ai-workflow/dynamic-web-scraping]] — 動態網站爬蟲三條路線 SOP
+- 待處理：Mac 用戶 Python 開發環境教學指南.md（檔案編碼問題，無法讀取）
+- 更新：index.md（總頁面 19 → 30，素材 9 → 22）
+
+## [2026-04-29] lint | 新批次頁面掃描，發現 6 個孤立頁面，全部修復
+
+- 🔴 **孤立頁面（修復）**：6 個新建頁面缺乏任何 wiki 內部連結
+- 補上反向連結：
+  - `ai-agent.md` → multimodal-llm, code-execution-sandbox, computer-architecture
+  - `playwright-cli.md` → dynamic-web-scraping
+  - `rag.md` → web-search-hierarchy
+  - `harnessing-engineering.md` → automation-platform-vs-ai-agent, computer-architecture
+  - `gemini-canvas.md` → presentation-generation-routes
+  - `presentation-architect/SKILL.md` → presentation-generation-routes
+  - `concept-visualizer/SKILL.md` → presentation-generation-routes（新增相關工具區塊）

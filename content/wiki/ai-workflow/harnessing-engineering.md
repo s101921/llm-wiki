@@ -132,6 +132,8 @@ AI 落地的核心挑戰，正在從「讓模型看起來更聰明」轉向「�
 - [[wiki/ai-workflow/claude-skills-audit]] — 層 2「工具系統」的實踐：Skills 過多反而讓模型亂用，定期健檢 SOP
 - [[wiki/concepts/ai-agent]] — AI Agent 的底層機制（工具呼叫、記憶系統、心跳、Compaction）
 - [[wiki/concepts/rag]] — 工具系統中的資訊檢索機制
+- [[wiki/concepts/automation-platform-vs-ai-agent]] — Harnessing Engineering 是「管程式的能力」的工程方法論；Make/n8n vs AI Agent 的存亡辯論
+- [[wiki/concepts/computer-architecture]] — 七層架構是理解 Harnessing Engineering 位置的基礎：LLM 正成為新一層 Shell
 
 ## 相關素材
 
