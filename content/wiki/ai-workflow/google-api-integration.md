@@ -138,6 +138,7 @@ python main.py
 
 - `[[wiki/concepts/code-execution-sandbox]]` — Claude Code 的 bash_tool 是一種沙盒執行環境
 - `[[wiki/ai-workflow/llm-interactive-chart]]` — 類似模式：Python 計算 + LLM 推理
+- `[[wiki/ai-workflow/mac-python-dev-setup]]` — 執行此整合前的 Mac Python 環境建置 SOP
 
 ## 相關素材
 

@@ -116,4 +116,5 @@ Cowork 的最大價值：連接 Slack + Gmail + Google Drive → 夜間自動生
 - [[wiki/summaries/cat-wu-ai-product-management]] — 來源素材
 - [[wiki/concepts/agentic-engineering]] — 工程師如何在 agent 時代工作
 - [[wiki/concepts/ai-agent]] — Agent 架構基礎
+- [[wiki/ai-workflow/harnessing-engineering]] — PM 需要理解 Harness 設計（Cat Wu 明確指出）
 - [[wiki/tools/ccr]] — Cowork 的雲端環境

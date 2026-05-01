@@ -104,3 +104,4 @@ LLM 能力是不均勻的：
 - [[wiki/ai-workflow/harnessing-engineering]] — 如何用 Harness 引導 LLM
 - [[wiki/summaries/karpathy-vibe-coding-agentic-engineering]] — 來源素材
 - [[wiki/concepts/computer-architecture]] — Software 1.0/2.0/3.0 在七層架構中的位置
+- [[wiki/concepts/automation-platform-vs-ai-agent]] — Software 3.0 下 Make/n8n vs AI Agent 的存亡辯論

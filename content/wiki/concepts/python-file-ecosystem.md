@@ -85,6 +85,7 @@ private: false
 - [[wiki/ai-workflow/python-html-data-dashboard]] — Python + HTML 完整數據分析方案
 - [[wiki/tools/gemini-canvas]] — Canvas 是不依賴 Python 的替代視覺化方案
 - [[wiki/concepts/code-execution-sandbox]] — Python 在沙盒中執行的技術背景
+- [[wiki/ai-workflow/mac-python-dev-setup]] — Mac 上建立 Python 執行環境的 SOP
 
 ## 相關素材
 

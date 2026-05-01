@@ -135,6 +135,7 @@ LLM：視覺化規格 + 洞察意圖（根據摘要撰寫分析、規劃圖表�
 - `[[wiki/concepts/python-file-ecosystem]]` — 各種輸出格式的套件選擇參考
 - `[[wiki/ai-workflow/html-chart-export]]` — HTML 圖表下載功能的實作 SOP
 - `[[wiki/concepts/code-execution-sandbox]]` — 為什麼 AI 有時只給程式碼不直接執行
+- `[[wiki/ai-workflow/mac-python-dev-setup]]` — 執行本方案前的環境建置 SOP
 
 ## 相關素材
 

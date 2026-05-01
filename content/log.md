@@ -221,3 +221,15 @@ type: log
   - [[wiki/concepts/llm-wiki-pattern]] — 補充 Karpathy 對 LLM wiki 的直接背書（+sources: 2）
 - 更新：index.md（+5 wiki 頁，+3 summary，+3 Clippings，總頁面 31 → 36，素材 23 → 26）
 - 同步修正：CLAUDE.md 加入「session 開始自動掃描 Clippings」規則
+
+## [2026-05-01] lint | 發現 7 個問題，全部修復
+
+- 🔴 **孤立頁面（修復）**：mac-python-dev-setup — 補充 3 個反向連結
+  - python-file-ecosystem → mac-python-dev-setup
+  - python-html-data-dashboard → mac-python-dev-setup
+  - google-api-integration → mac-python-dev-setup
+- 🔴 **佔位符連結（保留待處理）**：wiki/playbooks/README.md:26 有 [[wiki/playbooks/xxx]]，為範本佔位，不修改
+- 🟡 **缺失交叉連結（修復）**：
+  - ai-native-product → harnessing-engineering
+  - agentic-engineering → automation-platform-vs-ai-agent
+- 🟢 **待辦（未修）**：sync.sh 需排除 Clippings/ 和 .claude/；Verifiability 理論值得獨立頁面
