@@ -1,10 +1,10 @@
 ---
 title: LLM Wiki Pattern
 date: 2026-04-08
-updated: 2026-04-08
+updated: 2026-05-01
 type: concept
 tags: [知識管理, LLM, 第二大腦, PKM]
-sources: 1
+sources: 2
 status: growing
 ---
 
@@ -55,6 +55,22 @@ LLM Wiki 的做法不同：
 
 這個 Vault 本身就是 LLM Wiki Pattern 的實踐。可作為課程中示範「AI 如何輔助知識管理」的活生生案例。
 
+## Karpathy 本人的背書（2026 AI Ascent）
+
+（來源：[[wiki/summaries/karpathy-vibe-coding-agentic-engineering]]）
+
+> "I have my wiki being built up from these articles and I love asking questions about things… these are tools to enhance understanding."
+> "Anytime I see a different projection onto information, I always feel like I gain insight."
+
+Karpathy 把 LLM wiki 定位為：用不同角度投影同一份資料，幫助自己產生洞察的工具。他強調：
+
+> "You can outsource your thinking but you can't outsource your understanding."
+
+Wiki 的價值恰好在這裡——不是幫你「找答案」，而是幫你「建立理解」。
+
+---
+
 ## 相關素材
 
 - [[Clippings/llm-wiki]] — Andrej Karpathy 原文（GitHub Gist）
+- [[wiki/summaries/karpathy-vibe-coding-agentic-engineering]] — Karpathy 2026 AI Ascent 演講摘要（直接提到這個 wiki 模式）

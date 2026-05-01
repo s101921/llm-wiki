@@ -184,8 +184,14 @@ type: log
   - [[wiki/ai-workflow/google-api-integration]] — GCP + Google Sheets API + Gemini API 整合 SOP；Claude Code vs IDE/CLI 比較
   - [[wiki/ai-workflow/python-html-data-dashboard]] — Python + HTML 三層數據分析架構；LLM Data Agent 完整流程
   - [[wiki/ai-workflow/dynamic-web-scraping]] — 動態網站爬蟲三條路線 SOP
-- 待處理：Mac 用戶 Python 開發環境教學指南.md（檔案編碼問題，無法讀取）
 - 更新：index.md（總頁面 19 → 30，素材 9 → 22）
+
+## [2026-05-01] ingest | Mac 用戶 Python 開發環境教學指南
+
+- 上次因編碼問題跳過，本次成功讀取
+- 建立：[[wiki/ai-workflow/mac-python-dev-setup]] — venv 虛擬環境三情境 SOP、三種開發流派（單一腳本/模組化/Jupyter）比較
+- 更新：index.md（+1 頁面，總頁面 30 → 31，素材 22 → 23）
+- raw/ 所有 15 個檔案已全部處理完畢
 
 ## [2026-04-29] lint | 新批次頁面掃描，發現 6 個孤立頁面，全部修復
 
@@ -198,3 +204,20 @@ type: log
   - `gemini-canvas.md` → presentation-generation-routes
   - `presentation-architect/SKILL.md` → presentation-generation-routes
   - `concept-visualizer/SKILL.md` → presentation-generation-routes（新增相關工具區塊）
+
+## [2026-05-01] ingest | Clippings 補惡補：Karpathy AI Ascent + 李宏毅 Harness Engineering + Cat Wu Lenny Podcast
+
+- **掃描發現**：Clippings/ 有 3 份素材未登錄於 index.md
+- **建立（新 summary）**：
+  - [[wiki/summaries/karpathy-vibe-coding-agentic-engineering]] — Karpathy, Sequoia AI Ascent 2026
+  - [[wiki/summaries/lee-hunyi-harnessing-engineering]] — 李宏毅 NTU 課堂 2026-04-13
+  - [[wiki/summaries/cat-wu-ai-product-management]] — Cat Wu, Lenny Podcast 2026-04-23
+- **建立（新 concept）**：
+  - [[wiki/concepts/agentic-engineering]] — Vibe Coding vs Agentic Engineering, Jagged Intelligence, Software 3.0
+  - [[wiki/concepts/ai-native-product]] — AI-Native 產品開發方法論（Cat Wu / Anthropic 視角）
+- **更新（現有頁面）**：
+  - [[wiki/ai-workflow/harnessing-engineering]] — 補充李宏毅的 agents.md 論文數據 + 工具設計（+sources: 2）
+  - [[wiki/concepts/ai-agent]] — 補充 Karpathy 的 Agentic Engineering 視角（+sources: 2）
+  - [[wiki/concepts/llm-wiki-pattern]] — 補充 Karpathy 對 LLM wiki 的直接背書（+sources: 2）
+- 更新：index.md（+5 wiki 頁，+3 summary，+3 Clippings，總頁面 31 → 36，素材 23 → 26）
+- 同步修正：CLAUDE.md 加入「session 開始自動掃描 Clippings」規則

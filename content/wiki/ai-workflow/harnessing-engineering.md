@@ -1,10 +1,10 @@
 ---
 title: Harnessing Engineering
 date: 2026-04-09
-updated: 2026-04-09
+updated: 2026-05-01
 type: ai-workflow
-tags: [Harnessing Engineering, AI Agent, Context Engineering, Prompt Engineering, 落地, 穩定性]
-sources: 1
+tags: [Harnessing Engineering, AI Agent, Context Engineering, Prompt Engineering, 落地, 穩定性, agents.md, 工具設計]
+sources: 2
 status: growing
 ---
 
@@ -135,6 +135,54 @@ AI 落地的核心挑戰，正在從「讓模型看起來更聰明」轉向「�
 - [[wiki/concepts/automation-platform-vs-ai-agent]] — Harnessing Engineering 是「管程式的能力」的工程方法論；Make/n8n vs AI Agent 的存亡辯論
 - [[wiki/concepts/computer-architecture]] — 七層架構是理解 Harnessing Engineering 位置的基礎：LLM 正成為新一層 Shell
 
+## 補充視角：李宏毅的 agents.md 實驗數據
+
+（來源：[[wiki/summaries/lee-hunyi-harnessing-engineering]]）
+
+### 核心示範：Gemma 4 2B 修 bug 實驗
+
+同一個 2B 小模型：
+- **無 Harness**：幻想 parser.py 內容，編造後說「做完了」
+- **加 80 字 Harness 指令**：ls → cat 讀檔 → 修改 → verify 通過
+
+**洞察：** 模型不是不夠聰明，它只是不知道 parser.py 就在腳邊。Harness 補上了「環境感知」。
+
+### agents.md 的論文數據
+
+**2025 年 1 月論文（速度）：**
+- agents.md 可縮短任務完成時間，對邊緣困難任務幫助最明顯
+- 未量測正確率
+
+**2025 年 2 月論文（正確率）：**
+- 人類寫的 agents.md：不穩定，在強模型上有時無顯著效果
+- LLM 自己寫的 agents.md：多數情況比人類差，甚至不如沒有
+
+**結論：我們目前還不太會寫 agents.md，是研究中的開放問題。**
+
+### agents.md / CLAUDE.md 設計原則
+
+- ❌ 百科全書式（把所有規則塞進去）→ 佔滿 context，表現反而變差
+- ✅ 地圖式（告訴模型「想知道什麼，去哪裡找」）
+
+**遷移洞察：** CLAUDE.md = agents.md  
+OpenClaw 遷移到 Cowork 只需把 agents.md 改名 CLAUDE.md，agent 即復活。
+
+### 工具設計：人類友善 ≠ Agent 友善
+
+| 工具類型 | 人類感受 | Agent 表現 |
+|---------|---------|----------|
+| 分頁式搜尋（如 Google） | 直覺熟悉 | 一直翻頁塞滿 context，表現更差 |
+| 帶摘要搜尋（給檔名，讓 agent 自己開） | 不直覺 | 最好 |
+| Edit 工具（指定行號修改） | 精確 | 看不到全貌，容易加重複括號 |
+| Edit + Linting | 稍複雜 | 分數顯著提升 |
+
+**Agent-first CLI 原則（Google Workspace 案例）：**
+- Agent 喜歡 JSON structure，不喜歡 flags
+- 未來的工具要從設計起就考慮 agent 使用方式，而非「人能用，agent 剛好也能用」
+
+---
+
 ## 相關素材
 
-- [[wiki/summaries/harnessing-engineering]] — 完整影片摘要
+- [[wiki/summaries/harnessing-engineering]] — 影片摘要（歡歡老師版本）
+- [[wiki/summaries/lee-hunyi-harnessing-engineering]] — 李宏毅版本（含論文數據、工具設計、Gemma 4 2B 實驗）

@@ -1,10 +1,10 @@
 ---
 title: AI Agent
 date: 2026-04-08
-updated: 2026-04-08
+updated: 2026-05-01
 type: concept
-tags: [AI Agent, 工具呼叫, 記憶系統, 心跳機制, Cron Job, Context Engineering]
-sources: 1
+tags: [AI Agent, 工具呼叫, 記憶系統, 心跳機制, Cron Job, Context Engineering, Agentic Engineering]
+sources: 2
 status: growing
 ---
 
@@ -147,6 +147,23 @@ Context window 有上限，OpenClaw 的壓縮策略（由輕到重）：
 - [[wiki/concepts/code-execution-sandbox]] — 沙盒是 Agent tool-use 的執行環境；五大失敗原因
 - [[wiki/concepts/computer-architecture]] — 七層架構是理解 Agent 與 OS 關係的基礎；LLM 正成為新一層 Shell
 
+## Karpathy 補充：Agentic Engineering 視角
+
+（來源：[[wiki/summaries/karpathy-vibe-coding-agentic-engineering]]）
+
+> 「Agent 現在像資深實習生：執行力強，但會做奇怪的設計決定。」
+
+**Vibe Coding vs Agentic Engineering 的核心差異：**
+- Vibe Coding 提升底線（floor）——任何人都能做軟體
+- Agentic Engineering 維持上限（ceiling）——在 agent 工具下仍維持專業軟體的品質標準
+
+Jagged Intelligence 提醒我們：agent 在數學、程式碼這類有強 RL 信號的領域飛速進步，但在常識域會荒謬出錯（50 公尺洗車店「應該走路」）。開發者必須主動探索自己的應用「在哪個電路」。
+
+詳細分析：[[wiki/concepts/agentic-engineering]]
+
+---
+
 ## 相關素材
 
-- [[wiki/summaries/hung-yi-lee-openclaw-agent]] — 完整影片摘要
+- [[wiki/summaries/hung-yi-lee-openclaw-agent]] — 李宏毅 OpenClaw 影片摘要
+- [[wiki/summaries/karpathy-vibe-coding-agentic-engineering]] — Karpathy 2026 AI Ascent 演講摘要

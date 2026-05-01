@@ -68,6 +68,7 @@ _尚無頁面_
 | [[wiki/ai-workflow/google-api-integration]] | Google Sheets API + Gemini API 整合 SOP：GCP 設定、服務帳戶、Claude Code 代理 vs 傳統 IDE/CLI 開發比較 | 2 |
 | [[wiki/ai-workflow/python-html-data-dashboard]] | Python + HTML 數據儀表板架構：代碼執行分離模式、三種數據傳遞方案（變數替換/Jinja2/Streamlit）、LLM Data Agent 完整流程 | 2 |
 | [[wiki/ai-workflow/dynamic-web-scraping]] | 動態網站爬蟲 SOP：三條路線（AJAX 接口/Playwright/ScraperAPI）、判斷動態網站方法、穩定性清單 | 1 |
+| [[wiki/ai-workflow/mac-python-dev-setup]] | Mac Python 開發環境 SOP：venv 虛擬環境三情境、單一腳本/模組化/Jupyter 三種開發流派比較 | 1 |
 
 ---
 
@@ -92,6 +93,8 @@ _尚無頁面_
 | [[wiki/concepts/automation-platform-vs-ai-agent]] | Make/n8n vs AI Agent 存亡辯論：MCP 瓦解護城河（攻方）vs 維運盲區（守方）；結論：企業缺的是「管程式的能力」 | 1 |
 | [[wiki/concepts/python-file-ecosystem]] | Python 檔案生態系：六大類格式（Office/圖表/數據/影像/音視訊/壓縮）與對應套件；膠水語言定位；二進制寫入 vs 模板渲染 | 1 |
 | [[wiki/concepts/presentation-generation-routes]] | 簡報生成七條技術路線：可編輯 PPTX 的判斷標準、路線A-G 完整說明（截圖流/Reveal.js/python-pptx/pptxgenjs/Gemini Canvas/PPTAgent/WeasyPrint）| 1 |
+| [[wiki/concepts/agentic-engineering]] | Vibe Coding vs Agentic Engineering；Software 3.0；Jagged Intelligence；「能外包思考，不能外包理解」（Karpathy 2026） | 1 |
+| [[wiki/concepts/ai-native-product]] | AI-Native 產品開發：Research Preview 機制、剛剛好的 AGI Pill、PM 角色重定義、Eval 的重要性（Cat Wu / Anthropic） | 1 |
 
 ### 工具（wiki/tools/）
 
@@ -138,6 +141,9 @@ _尚無頁面_
 | [[wiki/summaries/hermes-agent-nous-research]] | 替代方案有限公司 — Hermes Agent 介紹（2026-04-05） | 文章 |
 | [[wiki/summaries/harnessing-engineering]] | 歡歡老師 — AI 落地關鍵：什麼是 Harnessing Engineering？ | 影片逐字稿 |
 | [[wiki/summaries/playwright-cli]] | microsoft/playwright-cli — CLI vs MCP 取捨、token 效率、session 機制 | GitHub README |
+| [[wiki/summaries/karpathy-vibe-coding-agentic-engineering]] | Karpathy — From Vibe Coding to Agentic Engineering（Sequoia AI Ascent 2026-04-29） | 演講逐字稿 |
+| [[wiki/summaries/lee-hunyi-harnessing-engineering]] | 李宏毅 — Harness Engineering：語言模型需要人類引導（NTU 2026-04-13） | 課堂影片逐字稿 |
+| [[wiki/summaries/cat-wu-ai-product-management]] | Cat Wu — Anthropic 如何比所有人都快（Lenny's Podcast 2026-04-23） | Podcast 逐字稿 |
 
 ---
 
@@ -152,19 +158,22 @@ _尚無頁面_
 | [[Clippings/Hermes Agent 是什麼？Nous Research 如何用「會記憶的 AI」改變遊戲規則？.md]] | 替代方案有限公司 — Hermes Agent 介紹（2026-04-05）|
 | [[raw/AI 落地關鍵：什麼是 Harnessing Engineering？.md]] | 歡歡老師 — Harnessing Engineering 影片逐字稿 |
 | [[Clippings/microsoftplaywright-cli CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots..md]] | microsoft/playwright-cli GitHub README |
+| [[Clippings/Andrej Karpathy From Vibe Coding to Agentic Engineering.md]] | Karpathy — AI Ascent 2026 演講逐字稿 |
+| [[Clippings/Harness Engineering：有時候語言模型不是不夠聰明，只是沒有人類好好引導.md]] | 李宏毅 — NTU 課堂影片逐字稿 |
+| [[Clippings/How Anthropic's product team moves faster than anyone else  Cat Wu (Head of Product, Claude Code).md]] | Cat Wu — Lenny's Podcast 逐字稿 |
 
 ---
 
 ## 統計
-- 總 wiki 頁面：30（11 概念、5 工具、7 摘要、9 ai-workflow、0 課程）+ 7 行銷 SKILL
-- 已 ingest 素材：22（raw/ 尚有 1 個檔案因編碼問題待處理：Mac 用戶 Python 開發環境教學指南.md）
+- 總 wiki 頁面：36（13 概念、5 工具、10 摘要、10 ai-workflow、0 課程）+ 7 行銷 SKILL
+- 已 ingest 素材：26（Clippings 全部處理完畢）
 - 進行中專案：0
 - Inbox 待處理：0
-- 最後更新：2026-04-29
+- 最後更新：2026-05-01
 
 ### 成熟度分布
 | status | 數量 | 頁面 |
 |--------|------|------|
 | stable | 7 | 7 summaries |
 | growing | 8 | 4 concepts（original）+ 4 tools（original）|
-| draft | 15 | 7 concepts（new batch）+ 2 tools（ccr, gemini-canvas）+ 6 ai-workflow（llm-interactive-chart + new batch）|
+| draft | 16 | 7 concepts（new batch）+ 2 tools（ccr, gemini-canvas）+ 7 ai-workflow（llm-interactive-chart + new batch）|
